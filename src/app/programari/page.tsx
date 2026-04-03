@@ -11,13 +11,13 @@ const statusConfig: Record<
   MaintenanceStatus,
   { label: string; className: string }
 > = {
-  programat: { label: "Programat", className: "bg-blue-100 text-blue-800" },
-  in_lucru: { label: "In Lucru", className: "bg-amber-100 text-amber-800" },
+  programat: { label: "Programat", className: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+  in_lucru: { label: "In Lucru", className: "bg-amber-500/20 text-amber-300 border-amber-500/30" },
   finalizat: {
     label: "Finalizat",
-    className: "bg-emerald-100 text-emerald-800",
+    className: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
   },
-  anulat: { label: "Anulat", className: "bg-gray-100 text-gray-800" },
+  anulat: { label: "Anulat", className: "bg-gray-500/20 text-gray-300 border-gray-500/30" },
 };
 
 export default function ProgramariPage() {

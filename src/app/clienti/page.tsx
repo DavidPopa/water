@@ -27,9 +27,9 @@ import type { Client, ClientStatus, FilterType } from "@/lib/types";
 
 const statusConfig: Record<ClientStatus, { label: string; className: string }> =
   {
-    activ: { label: "Activ", className: "bg-emerald-100 text-emerald-800" },
-    inactiv: { label: "Inactiv", className: "bg-gray-100 text-gray-800" },
-    nou: { label: "Nou", className: "bg-blue-100 text-blue-800" },
+    activ: { label: "Activ", className: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30" },
+    inactiv: { label: "Inactiv", className: "bg-gray-500/20 text-gray-300 border-gray-500/30" },
+    nou: { label: "Nou", className: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
   };
 
 export default function ClientiPage() {

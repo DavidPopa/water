@@ -28,10 +28,10 @@ const statusConfig: Record<
   MessageStatus,
   { label: string; className: string }
 > = {
-  trimis: { label: "Trimis", className: "bg-amber-100 text-amber-800" },
-  livrat: { label: "Livrat", className: "bg-blue-100 text-blue-800" },
-  citit: { label: "Citit", className: "bg-emerald-100 text-emerald-800" },
-  esuat: { label: "Esuat", className: "bg-red-100 text-red-800" },
+  trimis: { label: "Trimis", className: "bg-amber-500/20 text-amber-300 border-amber-500/30" },
+  livrat: { label: "Livrat", className: "bg-blue-500/20 text-blue-300 border-blue-500/30" },
+  citit: { label: "Citit", className: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30" },
+  esuat: { label: "Esuat", className: "bg-red-500/20 text-red-300 border-red-500/30" },
 };
 
 const tipLabels: Record<string, string> = {

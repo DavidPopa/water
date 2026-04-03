@@ -25,52 +25,52 @@ const statCards = [
     label: "Total Clienti",
     value: dashboardStats.totalClienti,
     icon: Users,
-    color: "text-blue-600",
-    bg: "bg-blue-50",
+    color: "text-blue-400",
+    bg: "bg-blue-500/15",
   },
   {
     label: "Mentenante Luna Aceasta",
     value: dashboardStats.mentenanteLuna,
     icon: Wrench,
-    color: "text-emerald-600",
-    bg: "bg-emerald-50",
+    color: "text-emerald-400",
+    bg: "bg-emerald-500/15",
   },
   {
     label: "Programari Azi",
     value: dashboardStats.programariAzi,
     icon: CalendarDays,
-    color: "text-violet-600",
-    bg: "bg-violet-50",
+    color: "text-violet-400",
+    bg: "bg-violet-500/15",
   },
   {
     label: "Mesaje Trimise",
     value: dashboardStats.mesajeTrimise,
     icon: MessageSquare,
-    color: "text-amber-600",
-    bg: "bg-amber-50",
+    color: "text-amber-400",
+    bg: "bg-amber-500/15",
   },
   {
     label: "Clienti Noi",
     value: dashboardStats.clientiNoi,
     icon: UserPlus,
-    color: "text-cyan-600",
-    bg: "bg-cyan-50",
+    color: "text-cyan-400",
+    bg: "bg-cyan-500/15",
   },
   {
     label: "Mentenante Restante",
     value: dashboardStats.mentenanteRestante,
     icon: AlertTriangle,
-    color: "text-red-600",
-    bg: "bg-red-50",
+    color: "text-red-400",
+    bg: "bg-red-500/15",
   },
 ];
 
 function StatusBadge({ status }: { status: string }) {
   const variants: Record<string, string> = {
-    programat: "bg-blue-100 text-blue-800",
-    in_lucru: "bg-amber-100 text-amber-800",
-    finalizat: "bg-emerald-100 text-emerald-800",
-    anulat: "bg-gray-100 text-gray-800",
+    programat: "bg-blue-500/20 text-blue-300 border-blue-500/30",
+    in_lucru: "bg-amber-500/20 text-amber-300 border-amber-500/30",
+    finalizat: "bg-emerald-500/20 text-emerald-300 border-emerald-500/30",
+    anulat: "bg-gray-500/20 text-gray-300 border-gray-500/30",
   };
   const labels: Record<string, string> = {
     programat: "Programat",
@@ -180,12 +180,12 @@ export default function DashboardPage() {
                       variant="outline"
                       className={
                         msg.status === "citit"
-                          ? "bg-emerald-100 text-emerald-800"
+                          ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/30"
                           : msg.status === "livrat"
-                            ? "bg-blue-100 text-blue-800"
+                            ? "bg-blue-500/20 text-blue-300 border-blue-500/30"
                             : msg.status === "trimis"
-                              ? "bg-amber-100 text-amber-800"
-                              : "bg-red-100 text-red-800"
+                              ? "bg-amber-500/20 text-amber-300 border-amber-500/30"
+                              : "bg-red-500/20 text-red-300 border-red-500/30"
                       }
                     >
                       {msg.status === "citit"
