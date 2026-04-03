@@ -1,0 +1,49 @@
+# Claude Code — local only
+.claude/settings.local.json
+DISCUTIE.md
+
+# Dragoon 2.0 — per-dev files (not shared)
+MEMORY_*.md
+!templates/MEMORY_template.md
+.dragoon-backup-*
+/research/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+venv/
+__pycache__/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Next.js
+next-env.d.ts
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# Dragoon internal (not for distribution)
+plans/dragoon-2.0-master-plan.md
+COMPARISON_TACHES_VS_DRAGOON.md
