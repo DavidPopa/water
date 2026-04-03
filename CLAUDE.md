@@ -5,7 +5,7 @@
 
 ## Tech Stack
 - **Language:** TypeScript
-- **Framework:** Next.js 15 (App Router)
+- **Framework:** Next.js 16 (App Router)
 - **Styling:** Tailwind CSS 4
 - **Components:** shadcn/ui
 - **State:** React state (dummy data, no backend/DB)
